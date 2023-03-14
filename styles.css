@@ -1,0 +1,322 @@
+/* * {
+  border: 1px dotted red;
+} */
+
+:root {
+  --section-width: 70%;
+}
+
+body {
+  background-color: whitesmoke;
+  color-scheme: dark;
+  margin: 0;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+section {
+  width: var(--section-width);
+  margin: 0 auto;
+  /* background-color: rgba(14, 160, 53, 0.079); */
+}
+
+/* ----------one------------- */
+
+.material-symbols-outlined {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  color: #4f4f4f;
+  zoom: 1.3;
+}
+
+.one .recipe-name {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.description-body {
+  font-size: 0.8rem;
+  width: 35vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1rem;
+  /* background-color:rgba(165, 42, 42, 0.403); */
+  position: relative;
+  top: -1rem;
+  left: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  width: 50vw;
+  display: flex;
+  justify-content: baseline;
+  /* background-color: rgba(0, 0, 255, 0.168); */
+}
+
+.dotes {
+  rotate: 90deg;
+  margin-right: 20px;
+  width: fit-content;
+  /* background-color:rgba(165, 42, 42, 0.403); */
+  position: relative;
+  width: 2rem;
+}
+
+.schedule-and-timing {
+  display: flex;
+  max-width: 15%;
+  min-width: 10rem;
+  height: fit-content;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem;
+  height: 20rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 5px rgba(128, 128, 128, 0.133);
+  margin-top: 3rem;
+  position: absolute;
+  left: calc(((100% - var(--section-width)) * 0.5) + var(--section-width));
+  transform: translateX(-100%);
+  z-index: 2;
+}
+
+.white {
+  display: block;
+}
+
+
+
+.icon-and-info {
+  position: relative;
+  width: fit-content;
+  height: 4rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  place-items: center;
+  left: 50%;
+  transform: translateX(-6rem);
+}
+
+.small-text-next-to-icon,
+.big-text-next-to-icon {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 1rem;
+  width: 5rem;
+}
+
+.small-text-next-to-icon {
+  font-size: 0.8rem;
+}
+
+.big-text-next-to-icon {
+  font-size: 1rem;
+}
+
+.icon-and-info {
+  margin: 1rem;
+}
+
+.yellow {
+  color: #f2994a;
+}
+
+/* ----------two------------- */
+
+.section-name {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.cake-name {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.ingredient {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+  font-style: normal;
+  display: flex;
+  grid-template-columns: 20px auto;
+  line-height: 1.8rem;
+  width: 45vw;
+}
+
+.ingredient p {
+  transform: translateY(-1.4rem);
+}
+
+.square {
+  height: 30px;
+  min-width: 30px;
+  border: 1px solid #828282;
+  border-radius: 0.3rem;
+  margin-right: 1rem;
+  zoom: 0.8;
+}
+
+/* ----------three------------- */
+
+.headding {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.instuction-box {
+  display: flex;
+  width: 45vw;
+}
+
+.instruction-number {
+  display: grid;
+  background-color: #f2994a;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  place-items: center;
+  zoom: 1;
+}
+
+.instruction-number p {
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  transform: translateY(-90%);
+}
+
+.instruction {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #333333;
+  width: 90%;
+  margin-left: 1.5rem;
+  transform: translateY(-1rem);
+}
+
+/* ----------footer------------- */
+
+footer {
+  height: 20rem;
+  display: grid;
+  place-items: end center;
+}
+
+footer h1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  /* * {
+  border: 1px dotted red;
+} */
+
+  section {
+    width: calc(var(--section-width) / 7 * 9.5);
+    /* background-color: rgba(14, 160, 53, 0.079); */
+  }
+
+  /* ----------one------------- */
+
+  .one .recipe-name {
+    font-size: 1.8rem;
+  }
+
+  .description-body {
+    /* background-color:rgba(165, 42, 42, 0.403); */
+    min-width: 70vw;
+  }
+
+  .colored,
+  .white {
+    position: relative;
+    display: block;
+  }
+
+  .schedule-and-timing {
+    /* background-color: rgba(127, 255, 212, 0.19); */
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    padding: 1rem;
+    height: fit-content;
+    border-radius: 1rem;
+    box-shadow: none;
+    margin: 0;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translateX(0);
+    max-width: 100%;
+  }
+
+  .icon-and-info {
+    max-width: 25vw;
+    display: flex;
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .not-colored {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .small-text-next-to-icon {
+    font-size: 0.5rem;
+    margin: 0;
+  }
+
+  .big-text-next-to-icon {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  /* ----------two------------- */
+
+  .ingredient {
+    line-height: 1.5rem;
+    width: 90vw;
+    /* text-align: justify; */
+  }
+
+  /* ----------three------------- */
+
+  .instuction-box {
+    display: flex;
+    width: 100%;
+  }
+
+  /* ----------footer------------- */
+
+  footer h1 {
+    font-size: 0.8rem;
+  }
+}
