@@ -94,8 +94,6 @@ img {
   display: block;
 }
 
-
-
 .icon-and-info {
   position: relative;
   width: fit-content;
@@ -111,7 +109,7 @@ img {
 .big-text-next-to-icon {
   font-family: "Montserrat", sans-serif;
   margin: 0 1rem;
-  width: 5rem;
+  width: 7rem;
 }
 
 .small-text-next-to-icon {
